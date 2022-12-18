@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/charon1212/my-express-toolkit/issues"
   },
-  "homepage": "https://github.com/charon1212/my-express-toolkit#readme"
+  "homepage": "https://github.com/charon1212/my-express-toolkit#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.17"
+  },
+  "dependencies": {
+    "util-charon1212": "^1.15.0"
+  }
 }
