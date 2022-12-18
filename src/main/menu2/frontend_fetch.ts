@@ -21,7 +21,7 @@ export const frontend_fetch = {
 ${importList.join('\n')}
 } from './type';
 
-const hostUrl = 'http://localhost:3000';
+const hostUrl = process.env['REACT_APP_EXPRESS_HOST_URL'] || 'http://localhost:3000';
 
 const defaultHeaders = {
   'content-type': 'application/json'
