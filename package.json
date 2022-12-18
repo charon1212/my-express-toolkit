@@ -1,0 +1,22 @@
+{
+  "name": "my-express-toolkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node dist/index.js",
+    "hello": "tsc && node dist/hello.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charon1212/my-express-toolkit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charon1212/my-express-toolkit/issues"
+  },
+  "homepage": "https://github.com/charon1212/my-express-toolkit#readme"
+}
