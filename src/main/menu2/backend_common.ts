@@ -38,7 +38,7 @@ const useJson = () => app.use(express.json());
  */
 const useCors = () => app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET,POST,DELETE');
+  res.header('Access-Control-Allow-Methods', 'GET,POST,DELETE,PUT,PATCH');
   res.header('Access-Control-Allow-Headers', 'Content-Type, auth-token, access_token');
   if (req.method === 'OPTIONS') {
     res.send(200);

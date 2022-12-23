@@ -4,7 +4,7 @@ export const backend_resource = {
   path: ({ backendDirPath, filename }: SourceInfo) => `backend/expressToolkit${backendDirPath}/${filename}.ts`,
   content: ({ name, uri, filename, backendDirPath, method, paramKeys }: SourceInfo) => {
     const toRoot = backendDirPath.split('/').filter((v) => v).map(() => `..`).join('/');
-    const requestParams = paramKeys.map((key) => `    const ${key} = req.params.${key}`).join('\n');
+    const requestParams = paramKeys.map((key) => `    const ${key} = req.params.${key};`).join('\n');
     return `import { app } from "${toRoot}/app";
 import { Request${name} } from "${toRoot}/type";
 import { Response${name} } from "${toRoot}/type";
